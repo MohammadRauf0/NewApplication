@@ -1,0 +1,58 @@
+<mat-drawer-container class="container" [class.drawer-opened] = "drawer.opened">
+  <mat-drawer #drawer class="drawer" mode="side" opened="true">
+
+    <mat-toolbar class="drawerHeader">
+        <img class="logo" src="\assets\music.png" alt="za logo">
+      <mat-icon class="close" (click)="drawer.close()">close</mat-icon>
+    </mat-toolbar>
+
+    <div class="toolbarContents">
+      <!-- Drawer -->
+      <mat-list role="list">
+        
+
+        <mat-list-item class="listItems" role="listitem" routerLink="artist/list">
+          Artist
+        </mat-list-item>
+        <mat-list-item class="listItems" role="listitem" routerLink="band/list">
+          Band
+        </mat-list-item>
+        <mat-list-item class="listItems" role="listitem" routerLink="concert-band/list">
+          Concert Band
+        </mat-list-item>
+        <mat-list-item class="listItems" role="listitem" routerLink="concert/list">
+          Concert
+        </mat-list-item>
+        <mat-list-item class="listItems" role="listitem" routerLink="instrument/list">
+          Instrument
+        </mat-list-item>
+        <mat-list-item class="listItems" role="listitem" routerLink="role-instrument/list">
+          Role Instrument
+        </mat-list-item>
+        <mat-list-item class="listItems" role="listitem" routerLink="role/list">
+          Role
+        </mat-list-item>
+
+
+
+      </mat-list>
+    </div>
+
+  </mat-drawer>
+
+  <mat-toolbar class="header">
+    <mat-icon class="open" *ngIf="!drawer.opened" (click)="drawer.toggle()">
+      menu
+    </mat-icon>
+    <div>Musician</div>
+  </mat-toolbar>
+
+  <div class="contents">
+      <router-outlet></router-outlet>
+  </div>
+
+  <mat-toolbar class="footer">
+    Musician Copyright © 2021 Msc - All rights reserved
+  </mat-toolbar>
+
+</mat-drawer-container>

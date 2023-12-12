@@ -1,0 +1,52 @@
+.container{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 1px;
+  font-size: 20px;
+  background-color: rgba(165, 165, 165, 0.5);
+}
+
+.contents{
+  min-height: 92vh;
+  padding: 10px 20px;
+}
+
+.open{
+  margin-right:25px;
+  margin-left:-10px;
+}
+
+.close{
+  margin-left: 5px;
+  margin-right: -10px;
+  margin-top: -145px;
+}
+
+.header{
+  margin-top: 15px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  border-bottom: 1px solid black;
+  font-size: 30px;
+}
+
+.footer{
+  position:fixed;
+  margin-top: -70px;
+  border-top: 1px solid black;
+  padding: 8px;
+}
+
+.logo{
+  width: 140px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.listItems{
+  padding: 5px;
+  padding-left: 15px;
+}
+
+.listItems:hover{
+  background-color:#f7f7f7;
+}

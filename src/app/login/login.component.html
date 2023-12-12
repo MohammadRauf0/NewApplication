@@ -1,0 +1,11 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="loginForm">
+  <h2 class="loginHeading">Login here</h2>
+
+  <label for="username" class="Label">Username</label>
+  <input type="text" id="username" class="Input" placeholder="Enter username here" formControlName="email" autocomplete="username"/>
+
+  <label for="password" class="Label">Password</label>
+  <input type="password" id="password" class="Input" placeholder="Enter your password" formControlName="password" autocomplete="current-password"/>
+
+  <button type="submit" class="submitButton" [disabled]="!form.valid" (click)="onLogin()">Submit</button>
+</form>

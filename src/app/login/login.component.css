@@ -1,0 +1,67 @@
+form{
+  height: 250px;
+  width: 400px;
+  background-color: rgba(165, 165, 165, 0.5);
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 30%;
+  border-radius: 5%;
+  border: 2px solid rgb(100, 100, 100);
+  box-shadow: 0 0 40px rgb(100, 100, 100);
+  padding: 50px 35px;
+}
+
+form *{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 1px;
+  outline: none;
+  border: none;
+}
+
+form h2{
+  color: rgb(100, 100, 100);
+  font-size: 35px;
+  margin-top:-10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+label{
+  display: block;
+  color: rgb(100, 100, 100);
+  margin-top: 15px;
+  font-size: 15px;  
+}
+
+input{
+  display: block;
+  height: 25px;
+  width:  95%;
+  background-color: rgb(235, 235, 235);
+  border-radius: 10px;
+  padding: 3px 10px;
+  margin-top: 10px;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+}
+::placeholder{
+  font-size: 13px;
+}
+
+.submitButton{
+  margin-top: 25px;
+  width: 85px;
+  height: 40px;
+  background-color: rgb(235, 235, 235);
+  border-radius: 10px;
+  font-size: 20px;
+  color: rgb(100, 100, 100);
+  margin-left: 314px;
+}
+
+.submitButton:hover{
+  background-color: green;
+  color: rgb(235, 235, 235);
+  transition: 0.5s;
+}
